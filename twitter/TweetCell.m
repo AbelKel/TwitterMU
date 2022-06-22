@@ -23,20 +23,13 @@
 
     // Configure the view for the selected state
 }
-//- (IBAction)didTapFavorite:(id)sender {
-//    // TODO: Update the local tweet model
-//    // TODO: Update cell UI
-//    self.tweet.favorited = YES;
-//    self.tweet.favoriteCount += 1;
-//    // TODO: Send a POST request to the POST favorites/create endpoint
-//}
 
 - (IBAction)didTapRetweet:(id)sender {
     self.tweet.retweeted = YES;
     self.tweet.retweetCount += 1;
     [[APIManager shared] retweet:self.tweet completion:^(Tweet *tweet, NSError *error) {
         if(error){
-             NSLog(@"Error favoriting tweet: %@", error.localizedDescription);
+             NSLog(@"Error retweeting tweet: %@", error.localizedDescription);
         }
         else{
             NSLog(@"Successfully favorited the following Tweet: %@", tweet.text);
