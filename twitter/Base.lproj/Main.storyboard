@@ -101,6 +101,13 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="createdAt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yum-hD-0Jc">
+                                                    <rect key="frame" x="310" y="19" width="65" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="user........................" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKg-BB-bSq">
                                                     <rect key="frame" x="199" y="17" width="103" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -109,49 +116,42 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="imageView:2sl-Ph-J6Z:image" translatesAutoresizingMaskIntoConstraints="NO" id="2sl-Ph-J6Z">
-                                                    <rect key="frame" x="78" y="253" width="24" height="22"/>
+                                                    <rect key="frame" x="78" y="229" width="24" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="imageView:vID-89-WAH:image" translatesAutoresizingMaskIntoConstraints="NO" id="vID-89-WAH">
-                                                    <rect key="frame" x="256" y="253" width="23" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="imageView:cT9-qS-3bE:image" translatesAutoresizingMaskIntoConstraints="NO" id="cT9-qS-3bE">
-                                                    <rect key="frame" x="348" y="251" width="26" height="22"/>
+                                                    <rect key="frame" x="256" y="229" width="23" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n1............" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAY-5g-4K8">
-                                                    <rect key="frame" x="103" y="256" width="44" height="21"/>
+                                                    <rect key="frame" x="103" y="230" width="44" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n2..........." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlJ-yx-r0p">
-                                                    <rect key="frame" x="192" y="255" width="46" height="22"/>
+                                                    <rect key="frame" x="192" y="230" width="46" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="n3..........." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-9G-cfW">
-                                                    <rect key="frame" x="287" y="261" width="46" height="12"/>
+                                                    <rect key="frame" x="287" y="234" width="46" height="12"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="imageView:ZeH-dt-tZW:image" translatesAutoresizingMaskIntoConstraints="NO" id="ZeH-dt-tZW">
-                                                    <rect key="frame" x="165" y="255" width="27" height="21"/>
+                                                    <rect key="frame" x="164" y="231" width="27" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="createdAt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yum-hD-0Jc">
-                                                    <rect key="frame" x="310" y="19" width="65" height="12"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="imageView:cT9-qS-3bE:image" translatesAutoresizingMaskIntoConstraints="NO" id="cT9-qS-3bE">
+                                                    <rect key="frame" x="349" y="228" width="26" height="22"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="gTP-89-KpV" firstAttribute="leading" secondItem="pdz-Vu-IV4" secondAttribute="trailing" constant="17" id="8w6-gM-DUO"/>
@@ -190,11 +190,18 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                 <rect key="frame" x="20" y="11" width="75" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="didTapLogout:" destination="Lbl-k5-U4i" eventType="touchUpInside" id="fdT-Qg-E39"/>
                                 </connections>
                             </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="edit-icon" id="Mg3-lO-dv3">
+                            <connections>
+                                <segue destination="Gh0-yK-0NN" kind="presentation" id="4qz-lg-wup"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -223,9 +230,76 @@ It has gained about 35% so far this year, and has more than doubled from a low a
             </objects>
             <point key="canvasLocation" x="860" y="36.431784107946029"/>
         </scene>
+        <!--Compose View Controller-->
+        <scene sceneID="8DG-aB-6jI">
+            <objects>
+                <viewController id="Gy0-LQ-tqK" customClass="ComposeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="maJ-Ah-I9V">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pqu-EJ-NN9">
+                                <rect key="frame" x="20" y="105" width="374" height="191"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dIx-PL-HbY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dIx-PL-HbY" firstAttribute="bottom" secondItem="Pqu-EJ-NN9" secondAttribute="bottom" constant="512" id="3JU-CR-AQx"/>
+                            <constraint firstItem="Pqu-EJ-NN9" firstAttribute="top" secondItem="dIx-PL-HbY" secondAttribute="top" constant="49" id="8vr-yh-5xc"/>
+                            <constraint firstItem="Pqu-EJ-NN9" firstAttribute="leading" secondItem="maJ-Ah-I9V" secondAttribute="leadingMargin" id="Z4S-dL-cqH"/>
+                            <constraint firstItem="Pqu-EJ-NN9" firstAttribute="trailing" secondItem="maJ-Ah-I9V" secondAttribute="trailingMargin" id="uxn-4T-dT5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NQ9-NY-UbC">
+                        <barButtonItem key="leftBarButtonItem" image="close-icon" id="ka8-Dm-3en"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="KYD-xv-kdS">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="rt1-AQ-XkV">
+                                <rect key="frame" x="324" y="11" width="70" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tweet"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="closeDraft" destination="ka8-Dm-3en" id="czE-oy-5uh"/>
+                        <outlet property="tweetDraft" destination="Pqu-EJ-NN9" id="Tyq-Il-bQ7"/>
+                        <outlet property="tweetTweet" destination="KYD-xv-kdS" id="5H3-M0-4iK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3Q-Ue-Tix" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3715.9420289855075" y="36.830357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hkh-c6-EKf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gh0-yK-0NN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QSZ-90-2fd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gy0-LQ-tqK" kind="relationship" relationship="rootViewController" id="ZGM-Qa-DPK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6G3-cO-vQQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2955" y="36"/>
+        </scene>
     </scenes>
     <resources>
         <image name="TwitterLogoBlue" width="200" height="200"/>
+        <image name="close-icon" width="26" height="24"/>
+        <image name="edit-icon" width="30" height="27"/>
         <image name="imageView:2sl-Ph-J6Z:image" width="30" height="30">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
@@ -4658,6 +4732,12 @@ AADu9gAA7vgAAO76AAEAmgABAJ8AAQCsAAEArwABALwAAQDBAAEAyQABAMwAAQDRAAEA2QAAAAAAAAQB
 AAAAAAAAAGgAAAAAAAAAAAAAAAAAAQDcA
 </mutableData>
         </image>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
