@@ -23,13 +23,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *tweetContent;
 @property (weak, nonatomic) IBOutlet UILabel *postDate;
 @property (weak, nonatomic) IBOutlet UILabel *userName;
-@property (weak, nonatomic) IBOutlet UIImageView *reply;
-@property (weak, nonatomic) IBOutlet UIImageView *like;
-@property (weak, nonatomic) IBOutlet UIImageView *directMessage;
+//@property (weak, nonatomic) IBOutlet UIImageView *reply;
+//@property (weak, nonatomic) IBOutlet UIImageView *like;
+//@property (weak, nonatomic) IBOutlet UIImageView *directMessage;
 @property (weak, nonatomic) IBOutlet UILabel *noReply;
 @property (weak, nonatomic) IBOutlet UILabel *retweetNumber;
-@property (weak, nonatomic) IBOutlet UIImageView *retweet;
+//@property (weak, nonatomic) IBOutlet UIImageView *retweet;
 @property (weak, nonatomic) IBOutlet UILabel *noLikes;
+@property (weak, nonatomic) IBOutlet UIButton *reply;
+@property (weak, nonatomic) IBOutlet UIButton *retweet;
+@property (weak, nonatomic) IBOutlet UIButton *like;
+@property (weak, nonatomic) IBOutlet UIButton *directMessage;
 
 
 @end

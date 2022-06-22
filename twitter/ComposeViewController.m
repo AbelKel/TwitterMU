@@ -7,7 +7,7 @@
 //
 
 #import "ComposeViewController.h"
-//#import "API/APIManager.m"
+#import "APIManager.h"
 
 @interface ComposeViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *closeDraft;
@@ -20,17 +20,42 @@
 @implementation ComposeViewController
 
 
+- (IBAction)tweetSendButton:(id)sender {
+    [[APIManager shared]postStatusWithText:self.tweetDraft.text completion:^(Tweet *tweet, NSError *error) {
+        if(error){
+            NSLog(@"Error composing Tweet: %@", error.localizedDescription);
+        }
+        else{
+            NSLog(@"%@", self.tweetDraft.text);
+            NSLog(@"Compose Tweet Success!");
+            [[APIManager shared]postStatusWithText:self.tweetDraft.text completion:^(Tweet *tweet, NSError *error) {
+                if(error){
+                    NSLog(@"Error composing Tweet: %@", error.localizedDescription);
+                }
+                else{
+                    [self.delegate didTweet:tweet];
+                    //NSLog(@"Compose Tweet Success!");
+                }
+            }];
+        }
+    }];
+    [self dismissViewControllerAnimated:true completion:nil];
+}
 
--(void)closeButtonAction:(id)sender {
-    if (self.closeDraft) {
-        [self dismissViewControllerAnimated:true completion:nil];
-    }
+        
+
+- (IBAction)closeButton:(id)sender {
+    [self dismissViewControllerAnimated:true completion:nil];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //[[APIManager shared] postStatusWithText:self.tweetDraft.text completion:nil];
+//    [[APIManager shared] postStatusWithText:self.tweetDraft.text completion:nil];
+    
+}
+
+- (void)didTweet:(Tweet *)tweet {
     
 }
 
