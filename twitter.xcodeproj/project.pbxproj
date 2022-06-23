@@ -17,6 +17,7 @@
 		6AD2790620BCC0380085BC29 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2790520BCC0380085BC29 /* LoginViewController.m */; };
 		6AD2790920BCC04D0085BC29 /* TimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2790820BCC04D0085BC29 /* TimelineViewController.m */; };
 		B7954F0E45A7BE044D806118 /* libPods-twitter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F97A972760BA7260F4EE827A /* libPods-twitter.a */; };
+		D976FA5C2864D70A00EEED0C /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D976FA5B2864D70A00EEED0C /* DetailsViewController.m */; };
 		D99AA3C4286145FA0001D23D /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = D99AA3C3286145FA0001D23D /* Keys.plist */; };
 		D99AA3CA28616DBE0001D23D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = D99AA3C928616DBE0001D23D /* User.m */; };
 		D99AA3CF28617DD90001D23D /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = D99AA3CE28617DD90001D23D /* Tweet.m */; };
@@ -43,6 +44,8 @@
 		6AD2790720BCC04D0085BC29 /* TimelineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimelineViewController.h; sourceTree = "<group>"; };
 		6AD2790820BCC04D0085BC29 /* TimelineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimelineViewController.m; sourceTree = "<group>"; };
 		8CBD150D1312BE82E3E009DA /* Pods-twitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-twitter.release.xcconfig"; path = "Target Support Files/Pods-twitter/Pods-twitter.release.xcconfig"; sourceTree = "<group>"; };
+		D976FA5A2864D70900EEED0C /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		D976FA5B2864D70A00EEED0C /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		D99AA3C3286145FA0001D23D /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		D99AA3C828616DBE0001D23D /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		D99AA3C928616DBE0001D23D /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
@@ -81,7 +84,6 @@
 				313A20C82108A59C044FD059 /* Pods-twitter.debug.xcconfig */,
 				8CBD150D1312BE82E3E009DA /* Pods-twitter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -122,6 +124,8 @@
 				D99AA3D128626ACF0001D23D /* TweetCell.m */,
 				D99AA3D32862E1960001D23D /* ComposeViewController.h */,
 				D99AA3D42862E1960001D23D /* ComposeViewController.m */,
+				D976FA5A2864D70900EEED0C /* DetailsViewController.h */,
+				D976FA5B2864D70A00EEED0C /* DetailsViewController.m */,
 			);
 			path = twitter;
 			sourceTree = "<group>";
@@ -177,6 +181,7 @@
 				6AD278D120BC4B950085BC29 /* Sources */,
 				6AD278D220BC4B950085BC29 /* Frameworks */,
 				6AD278D320BC4B950085BC29 /* Resources */,
+				B81C94E05121741DDBDE3AD4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +261,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B81C94E05121741DDBDE3AD4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-twitter/Pods-twitter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-twitter/Pods-twitter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-twitter/Pods-twitter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,6 +287,7 @@
 			files = (
 				D99AA3D228626ACF0001D23D /* TweetCell.m in Sources */,
 				6AD278F320BCA6020085BC29 /* BDBOAuth1SessionManager+SFAuthenticationSession.m in Sources */,
+				D976FA5C2864D70A00EEED0C /* DetailsViewController.m in Sources */,
 				D99AA3CA28616DBE0001D23D /* User.m in Sources */,
 				D99AA3D52862E1970001D23D /* ComposeViewController.m in Sources */,
 				6AD278E820BC4B970085BC29 /* main.m in Sources */,

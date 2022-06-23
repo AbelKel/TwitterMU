@@ -7,11 +7,15 @@
 //
 
 #import "TweetCell.h"
+#import "Tweet.h"
 #import "APIManager.h"
 #import "User.h"
 #import "TimelineViewController.h"
+#import "DateTools.h"
 
 @implementation TweetCell
+//
+//NSDate *timeAgoDate = createdAtString.days.earlier;
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -63,6 +67,10 @@
     
 
 -(void)refreshViews {
+    //NSDate *difference = self.tweet.createdAtString;
+//    [difference.shortTimeAgoSinceNow];
+    
+
     if (self.tweet.retweeted == YES) {
         [self.retweet setImage:[UIImage imageNamed:@"retweet-icon-green.png"] forState:UIControlStateNormal];
     } else {
@@ -75,6 +83,9 @@
     }
 
 }
+
+
+
 
 
 

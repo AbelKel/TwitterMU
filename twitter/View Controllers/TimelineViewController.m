@@ -15,8 +15,11 @@
 #import "UIImageView+AFNetworking.h"
 #import "ComposeViewController.h"
 #import "User.h"
+#import "DetailsViewController.h"
+
 
 @interface TimelineViewController () <ComposeViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
+//@property (strong, nonatomic) NSMutableArray *filteredData;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *arrayOfTweets;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
@@ -53,7 +56,9 @@
                 self.arrayOfTweets = (NSMutableArray *)tweets;
                 
                 [self.tableView reloadData];
+               //
             }
+            //self.filteredData = self.arrayOfTweets;
         } else {
             NSLog(@"Error getting home timeline: %@", error.localizedDescription);
         }
@@ -112,27 +117,24 @@
 }
 
 
-
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NSString *URLString = tweetContent.user.profilePicture;
-//    NSURL *url = [NSURL URLWithString:URLString];
-//    NSData *urlData = [NSData dataWithContentsOfURL:url];
-//}
-
-
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-//    UINavigationController *navigationController = [segue destinationViewController];
-//    ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
-//    ComposeViewController.delegate = self;
-//}
+
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-   UINavigationController *navigationController = [segue destinationViewController];
-   ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
-   composeController.delegate = self;
+    if ([[segue identifier] isEqualToString:@"showDetails"]){
+        UINavigationController *navigationController = [segue destinationViewController];
+        DetailsViewController *detailsViewController = (DetailsViewController*)navigationController.topViewController;
+        UITableViewCell *cell = sender;
+        NSIndexPath *indexpath = [self.tableView indexPathForCell:cell];
+        Tweet *tweet = self.arrayOfTweets[indexpath.row];
+        detailsViewController.tweet = tweet;
+    }else{
+        UINavigationController *navigationController = [segue destinationViewController];
+        ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
+        composeController.delegate = self;
+    }
 }
 
 
