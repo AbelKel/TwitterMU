@@ -19,7 +19,6 @@
 
 
 @interface TimelineViewController () <ComposeViewControllerDelegate, UITableViewDelegate, UITableViewDataSource>
-//@property (strong, nonatomic) NSMutableArray *filteredData;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *arrayOfTweets;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
@@ -33,58 +32,46 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-
-    
     [self getTimeline];
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(getTimeline) forControlEvents:UIControlEventValueChanged];
     [self.tableView insertSubview:self.refreshControl atIndex:0];
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
 
 }
     // Get timeline
 - (void)getTimeline{
     [[APIManager shared] getHomeTimelineWithCompletion:^(NSArray *tweets, NSError *error) {
         if (tweets) {
-            NSLog(@"😎😎😎 Successfully loaded home timeline");
+            NSLog(@"Successfully loaded home timeline"); // print statement needed for the case when there is an API issue
             for (Tweet *tweet in tweets) {
-                NSString *text = tweet.text;
-                NSLog(@"%@", text);
                 self.arrayOfTweets = (NSMutableArray *)tweets;
-                
                 [self.tableView reloadData];
-               //
             }
-            //self.filteredData = self.arrayOfTweets;
         } else {
-            NSLog(@"Error getting home timeline: %@", error.localizedDescription);
+            NSLog(@"Error getting home timeline: %@", error.localizedDescription); // print statement needed for the case when there is an API issue
         }
+        [self.refreshControl endRefreshing];
     }];
-    [self.refreshControl endRefreshing];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)didTweet:(Tweet *)tweet {
-    [self.arrayOfTweets addObject:tweet]; // makes the tweet apper 
+    [self.arrayOfTweets addObject:tweet]; // makes the tweet appear
     [self.tableView reloadData];
 }
 
 
 - (IBAction)didTapLogout:(id)sender {
     AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
-
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     LoginViewController *loginViewController = [storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
     appDelegate.window.rootViewController = loginViewController;
-    
-    // Clear out the access token
     [[APIManager shared] logout];
 }
 // 1) Method for UITableViewDatasource
@@ -113,17 +100,10 @@
     cell.profilePicture.layer.cornerRadius = cell.profilePicture.frame.size.height/2;
     cell.profilePicture.layer.masksToBounds = YES;
     cell.profilePicture.layer.borderWidth = 0;
-
     
     return cell;
     
 }
-
-
-#pragma mark - Navigation
-
-
-
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetails"]){

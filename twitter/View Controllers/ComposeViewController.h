@@ -23,7 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id<ComposeViewControllerDelegate> delegate;
 @property (weak, nonatomic) IBOutlet UILabel *characterCountLabel;
 
--(void)closeButtonAction:(id)sender;
 
 @end
 

@@ -19,8 +19,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *detailsName;
 @property (weak, nonatomic) IBOutlet UILabel *detailsUserName;
 @property (weak, nonatomic) IBOutlet UILabel *tweetDetailsDetails;
-@property (weak, nonatomic) IBOutlet UILabel *detailsLikes;// retweet number
-@property (weak, nonatomic) IBOutlet UILabel *detailsRetweets;// like number
+@property (weak, nonatomic) IBOutlet UILabel *detailsLikes;
+@property (weak, nonatomic) IBOutlet UILabel *detailsRetweets;
+@property (weak, nonatomic) IBOutlet UILabel *detailsDate;
 
 
 @end
@@ -36,7 +37,7 @@
     self.tweetDetailsDetails.text = self.tweet.text;
     self.detailsRetweets.text = [NSString stringWithFormat:@"%d", self.tweet.retweetCount];
     self.detailsLikes.text = [NSString stringWithFormat:@"%d", self.tweet.favoriteCount];
-
+    self.detailsDate.text = self.tweet.createdAtString;
 
     NSString *URLString = self.tweet.user.profilePicture;
     NSString *stringWithoutNormal = [URLString stringByReplacingOccurrencesOfString:@"_normal" withString:@""];
@@ -54,7 +55,7 @@
         self.tweet.favorited = NO;
         [[APIManager shared] unFavorite:self.tweet completion:^(Tweet *tweet, NSError *error) {
             if(error){
-                 NSLog(@"Error UNretweeting tweet: %@", error.localizedDescription);
+                 NSLog(@"Error UNretweeting tweet: %@", error.localizedDescription); // error statemenet needed
             }
             else{
                 NSLog(@"Successfully Unretweeted the following Tweet: %@", tweet.text);
@@ -66,7 +67,7 @@
     self.tweet.favorited = YES;
     [[APIManager shared] favorite:self.tweet completion:^(Tweet *tweet, NSError *error) {
         if(error){
-             NSLog(@"Error favoriting tweet: %@", error.localizedDescription);
+             NSLog(@"Error favoriting tweet: %@", error.localizedDescription); // error statemenet needed
         }
         else{
             NSLog(@"Successfully favorited the following Tweet: %@", tweet.text);

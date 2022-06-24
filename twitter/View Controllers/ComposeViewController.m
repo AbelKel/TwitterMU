@@ -36,7 +36,6 @@
                 }
                 else{
                     [self.delegate didTweet:tweet];
-                    //NSLog(@"Compose Tweet Success!");
                 }
             }];
         }
@@ -52,8 +51,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    [[APIManager shared] postStatusWithText:self.tweetDraft.text completion:nil];
     
 }
 
@@ -67,7 +64,7 @@
         _counter.hidden = YES;
     }
     if (substring.length == 140) {
-        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"You have used too many characters in your tweet!" message:@"Character limit is 140 tweet." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"You have used too many characters in your tweet!" message:@"Character limit is 140 for a tweet." preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
         [alert addAction:defaultAction];
         [self presentViewController:alert animated:YES completion:nil];

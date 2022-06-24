@@ -66,7 +66,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-8Y-3ek">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oA3-8Y-3ek">
                                 <rect key="frame" x="0.0" y="56" width="414" height="786"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -89,11 +89,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-89-KpV" customClass="ResponsiveLabel">
-                                                    <rect key="frame" x="103" y="45" width="295" height="167"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="270" id="5dZ-kx-cgI"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-89-KpV">
+                                                    <rect key="frame" x="103" y="45" width="291" height="167"/>
                                                     <string key="text">Russia’s ruble hit a seven-year high, cementing its status as the world’s best-performing currency.
 
 It has gained about 35% so far this year, and has more than doubled from a low after the invasion of Ukraine.</string>
@@ -173,6 +170,7 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="aKg-BB-bSq" firstAttribute="bottom" secondItem="yum-hD-0Jc" secondAttribute="bottom" id="2dz-91-zwd"/>
+                                                <constraint firstAttribute="trailing" secondItem="gTP-89-KpV" secondAttribute="trailing" constant="20" symbolic="YES" id="3A0-RW-2Xo"/>
                                                 <constraint firstItem="Nga-9G-cfW" firstAttribute="leading" secondItem="6SX-x7-Lfm" secondAttribute="trailing" constant="8" id="5Os-RG-vvJ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="6SX-x7-Lfm" secondAttribute="bottom" constant="-1" id="6WQ-4M-hJe"/>
                                                 <constraint firstItem="n34-91-HFT" firstAttribute="baseline" secondItem="yum-hD-0Jc" secondAttribute="firstBaseline" id="940-Be-uVP"/>
@@ -198,14 +196,12 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                                 <constraint firstAttribute="bottomMargin" secondItem="Eng-fI-F3x" secondAttribute="bottom" constant="-9" id="fWE-I6-jYd"/>
                                                 <constraint firstItem="n34-91-HFT" firstAttribute="leading" secondItem="pdz-Vu-IV4" secondAttribute="trailing" constant="10" id="izi-yi-iDq"/>
                                                 <constraint firstItem="HAY-5g-4K8" firstAttribute="top" secondItem="OlJ-yx-r0p" secondAttribute="top" id="j1r-H8-qla"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="gTP-89-KpV" secondAttribute="trailing" id="j5e-wz-w9b"/>
                                                 <constraint firstItem="kq6-aN-GFF" firstAttribute="top" secondItem="gTP-89-KpV" secondAttribute="bottom" constant="15" id="jN2-NP-D72"/>
                                                 <constraint firstItem="OlJ-yx-r0p" firstAttribute="leading" secondItem="AsG-Xf-Gqe" secondAttribute="trailing" constant="8" id="kwL-QE-yUr"/>
                                                 <constraint firstItem="aKg-BB-bSq" firstAttribute="leading" secondItem="n34-91-HFT" secondAttribute="trailing" constant="8" id="mMW-Fp-9fm"/>
                                                 <constraint firstItem="Nga-9G-cfW" firstAttribute="leading" secondItem="Uha-jj-cb8" secondAttribute="leading" constant="287" id="mOm-Bn-Kzp"/>
                                                 <constraint firstItem="pdz-Vu-IV4" firstAttribute="leading" secondItem="Uha-jj-cb8" secondAttribute="leadingMargin" constant="-11" id="rpg-zw-WIJ"/>
                                                 <constraint firstItem="6SX-x7-Lfm" firstAttribute="top" secondItem="gTP-89-KpV" secondAttribute="bottom" constant="1" id="sDM-ak-OSR"/>
-                                                <constraint firstItem="gTP-89-KpV" firstAttribute="trailing" secondItem="Uha-jj-cb8" secondAttribute="trailingMargin" constant="4" id="scG-rU-d42"/>
                                                 <constraint firstItem="n34-91-HFT" firstAttribute="baseline" secondItem="yum-hD-0Jc" secondAttribute="baseline" id="y7q-XN-4Rn"/>
                                                 <constraint firstItem="yum-hD-0Jc" firstAttribute="top" secondItem="Uha-jj-cb8" secondAttribute="topMargin" constant="8" id="yNL-ax-dhG"/>
                                             </constraints>
@@ -232,10 +228,10 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                         <viewLayoutGuide key="safeArea" id="ugE-Ul-H9I"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottomMargin" secondItem="oA3-8Y-3ek" secondAttribute="bottom" constant="-34" id="JEe-RS-4RV"/>
+                            <constraint firstItem="ugE-Ul-H9I" firstAttribute="bottom" secondItem="oA3-8Y-3ek" secondAttribute="bottom" id="ORm-3w-nGl"/>
                             <constraint firstItem="oA3-8Y-3ek" firstAttribute="leading" secondItem="ugE-Ul-H9I" secondAttribute="leading" id="aUb-05-Lqi"/>
+                            <constraint firstItem="ugE-Ul-H9I" firstAttribute="trailing" secondItem="oA3-8Y-3ek" secondAttribute="trailing" id="inp-jg-ERg"/>
                             <constraint firstItem="oA3-8Y-3ek" firstAttribute="top" secondItem="ugE-Ul-H9I" secondAttribute="top" id="shG-rq-eAz"/>
-                            <constraint firstItem="oA3-8Y-3ek" firstAttribute="centerX" secondItem="qax-2F-Vhk" secondAttribute="centerX" id="zQJ-7x-JnR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home Timeline" id="MOc-fV-EZE">
@@ -291,27 +287,27 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HNk-i2-aR1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HNk-i2-aR1">
                                 <rect key="frame" x="12" y="55" width="86" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="FgJ-63-Huu"/>
+                                    <constraint firstAttribute="height" constant="83" id="aV4-YT-xWa"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name.........................................." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBC-hZ-gBz">
-                                <rect key="frame" x="123" y="55" width="250" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="name.........................................." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBC-hZ-gBz">
+                                <rect key="frame" x="123" y="55" width="174" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userName.........." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95U-A5-KNg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName.........." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95U-A5-KNg">
                                 <rect key="frame" x="123" y="84" width="94" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tweetDetails" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zA-ji-kSE">
-                                <rect key="frame" x="123" y="122" width="221" height="149"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tweetDetails" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zA-ji-kSE">
+                                <rect key="frame" x="123" y="122" width="221" height="17"/>
                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -371,9 +367,33 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label......." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijA-pF-xQu">
+                                <rect key="frame" x="326" y="59" width="49" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HPF-O5-wBp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HPF-O5-wBp" firstAttribute="top" secondItem="HNk-i2-aR1" secondAttribute="top" constant="1" id="1KU-ZO-tqa"/>
+                            <constraint firstItem="6zA-ji-kSE" firstAttribute="leading" secondItem="HPF-O5-wBp" secondAttribute="leading" constant="123" id="8Aj-9P-Xm1"/>
+                            <constraint firstItem="95U-A5-KNg" firstAttribute="top" secondItem="FBC-hZ-gBz" secondAttribute="bottom" constant="11" id="M7S-Rj-qPD"/>
+                            <constraint firstItem="95U-A5-KNg" firstAttribute="leading" secondItem="HNk-i2-aR1" secondAttribute="trailing" constant="25" id="M7X-E9-feW"/>
+                            <constraint firstItem="HNk-i2-aR1" firstAttribute="leading" secondItem="HPF-O5-wBp" secondAttribute="leading" constant="12" id="Nma-zN-CJ5"/>
+                            <constraint firstItem="ijA-pF-xQu" firstAttribute="top" secondItem="HPF-O5-wBp" secondAttribute="top" constant="3" id="Q2t-mR-Vsq"/>
+                            <constraint firstItem="HPF-O5-wBp" firstAttribute="bottom" secondItem="HNk-i2-aR1" secondAttribute="bottom" constant="704" id="UvY-kA-Mix"/>
+                            <constraint firstItem="HPF-O5-wBp" firstAttribute="trailing" secondItem="6zA-ji-kSE" secondAttribute="trailing" constant="70" id="YW1-5d-5Ja"/>
+                            <constraint firstItem="HPF-O5-wBp" firstAttribute="top" secondItem="FBC-hZ-gBz" secondAttribute="top" constant="1" id="eb4-z3-Jtu"/>
+                            <constraint firstItem="6zA-ji-kSE" firstAttribute="top" secondItem="95U-A5-KNg" secondAttribute="bottom" constant="23" id="eef-fP-gqL"/>
+                            <constraint firstItem="ijA-pF-xQu" firstAttribute="leading" secondItem="FBC-hZ-gBz" secondAttribute="trailing" constant="8" symbolic="YES" id="hQx-Hd-S1x"/>
+                            <constraint firstItem="6zA-ji-kSE" firstAttribute="top" secondItem="ijA-pF-xQu" secondAttribute="bottom" constant="52" id="k29-wi-FMN"/>
+                            <constraint firstItem="HPF-O5-wBp" firstAttribute="trailing" secondItem="ijA-pF-xQu" secondAttribute="trailing" constant="60" id="kxN-Nm-nCA"/>
+                            <constraint firstItem="HPF-O5-wBp" firstAttribute="trailing" secondItem="95U-A5-KNg" secondAttribute="trailing" constant="197" id="n98-oN-mg0"/>
+                            <constraint firstItem="6zA-ji-kSE" firstAttribute="leading" secondItem="HNk-i2-aR1" secondAttribute="trailing" constant="25" id="tCV-Md-K4v"/>
+                            <constraint firstItem="FBC-hZ-gBz" firstAttribute="leading" secondItem="HNk-i2-aR1" secondAttribute="trailing" constant="25" id="zaZ-qM-CFs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BJr-RU-zkU">
                         <barButtonItem key="leftBarButtonItem" image="close-icon" id="k3b-y2-OV5">
@@ -383,6 +403,7 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="detailsDate" destination="ijA-pF-xQu" id="wIQ-SM-knL"/>
                         <outlet property="detailsImage" destination="HNk-i2-aR1" id="BRn-Yo-9uJ"/>
                         <outlet property="detailsLikes" destination="rzT-ha-mEV" id="WYw-pa-oIl"/>
                         <outlet property="detailsName" destination="FBC-hZ-gBz" id="xPx-dU-TdA"/>
