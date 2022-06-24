@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -108,6 +108,7 @@
 		6AD278D720BC4B950085BC29 /* twitter */ = {
 			isa = PBXGroup;
 			children = (
+				D9A12DC528663BE900035A7D /* Cell */,
 				6AD2790320BCC01B0085BC29 /* View Controllers */,
 				6AD278FF20BCBF280085BC29 /* Views */,
 				6AD278F720BCB6900085BC29 /* API */,
@@ -120,12 +121,6 @@
 				6AD278E620BC4B970085BC29 /* Info.plist */,
 				D99AA3C3286145FA0001D23D /* Keys.plist */,
 				6AD278E720BC4B970085BC29 /* main.m */,
-				D99AA3D028626ACF0001D23D /* TweetCell.h */,
-				D99AA3D128626ACF0001D23D /* TweetCell.m */,
-				D99AA3D32862E1960001D23D /* ComposeViewController.h */,
-				D99AA3D42862E1960001D23D /* ComposeViewController.m */,
-				D976FA5A2864D70900EEED0C /* DetailsViewController.h */,
-				D976FA5B2864D70A00EEED0C /* DetailsViewController.m */,
 			);
 			path = twitter;
 			sourceTree = "<group>";
@@ -166,8 +161,21 @@
 				6AD2790520BCC0380085BC29 /* LoginViewController.m */,
 				6AD2790720BCC04D0085BC29 /* TimelineViewController.h */,
 				6AD2790820BCC04D0085BC29 /* TimelineViewController.m */,
+				D99AA3D32862E1960001D23D /* ComposeViewController.h */,
+				D99AA3D42862E1960001D23D /* ComposeViewController.m */,
+				D976FA5A2864D70900EEED0C /* DetailsViewController.h */,
+				D976FA5B2864D70A00EEED0C /* DetailsViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D9A12DC528663BE900035A7D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D99AA3D028626ACF0001D23D /* TweetCell.h */,
+				D99AA3D128626ACF0001D23D /* TweetCell.m */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

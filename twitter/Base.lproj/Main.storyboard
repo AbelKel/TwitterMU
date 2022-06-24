@@ -89,8 +89,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-89-KpV">
-                                                    <rect key="frame" x="103" y="45" width="291" height="167"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTP-89-KpV" customClass="ResponsiveLabel">
+                                                    <rect key="frame" x="103" y="45" width="295" height="167"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="270" id="5dZ-kx-cgI"/>
                                                     </constraints>
@@ -110,8 +110,8 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="143" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAY-5g-4K8">
-                                                    <rect key="frame" x="130.5" y="230" width="16.5" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="143" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAY-5g-4K8">
+                                                    <rect key="frame" x="106" y="232" width="16.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="mHA-IL-4jp"/>
                                                     </constraints>
@@ -205,6 +205,8 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                                 <constraint firstItem="Nga-9G-cfW" firstAttribute="leading" secondItem="Uha-jj-cb8" secondAttribute="leading" constant="287" id="mOm-Bn-Kzp"/>
                                                 <constraint firstItem="pdz-Vu-IV4" firstAttribute="leading" secondItem="Uha-jj-cb8" secondAttribute="leadingMargin" constant="-11" id="rpg-zw-WIJ"/>
                                                 <constraint firstItem="6SX-x7-Lfm" firstAttribute="top" secondItem="gTP-89-KpV" secondAttribute="bottom" constant="1" id="sDM-ak-OSR"/>
+                                                <constraint firstItem="gTP-89-KpV" firstAttribute="trailing" secondItem="Uha-jj-cb8" secondAttribute="trailingMargin" constant="4" id="scG-rU-d42"/>
+                                                <constraint firstItem="n34-91-HFT" firstAttribute="baseline" secondItem="yum-hD-0Jc" secondAttribute="baseline" id="y7q-XN-4Rn"/>
                                                 <constraint firstItem="yum-hD-0Jc" firstAttribute="top" secondItem="Uha-jj-cb8" secondAttribute="topMargin" constant="8" id="yNL-ax-dhG"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -290,18 +292,18 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HNk-i2-aR1">
-                                <rect key="frame" x="12" y="55" width="94" height="95"/>
+                                <rect key="frame" x="12" y="55" width="86" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name................" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBC-hZ-gBz">
-                                <rect key="frame" x="123" y="55" width="116" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name.........................................." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBC-hZ-gBz">
+                                <rect key="frame" x="123" y="55" width="250" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="userName.........." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95U-A5-KNg">
-                                <rect key="frame" x="124" y="84" width="94" height="15"/>
+                                <rect key="frame" x="123" y="84" width="94" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -310,7 +312,8 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tweetDetails" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zA-ji-kSE">
                                 <rect key="frame" x="123" y="122" width="221" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -320,13 +323,13 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwj-Lz-G3c">
-                                <rect key="frame" x="54" y="328" width="35" height="21"/>
+                                <rect key="frame" x="54" y="329" width="35" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="reply-icon"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gvs-U7-H5c">
-                                <rect key="frame" x="147" y="323" width="28" height="30"/>
+                                <rect key="frame" x="123" y="324" width="28" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="retweet-icon"/>
@@ -335,7 +338,7 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDu-sK-Qbq">
-                                <rect key="frame" x="236" y="319" width="30" height="30"/>
+                                <rect key="frame" x="229" y="321" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="favor-icon"/>
@@ -344,35 +347,46 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp4-ZD-CUV">
-                                <rect key="frame" x="339" y="323" width="30" height="26"/>
+                                <rect key="frame" x="322" y="326" width="30" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="message-icon"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzT-ha-mEV">
-                                <rect key="frame" x="274" y="326" width="31" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="retweets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vY-rF-4SN">
-                                <rect key="frame" x="179" y="329" width="49" height="15"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="likes......" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzT-ha-mEV">
+                                <rect key="frame" x="258" y="330" width="56" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="retweets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vY-rF-4SN">
+                                <rect key="frame" x="157" y="331.5" width="49" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QF5-xI-c3R">
+                                <rect key="frame" x="38" y="365" width="325" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HPF-O5-wBp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BJr-RU-zkU"/>
+                    <navigationItem key="navigationItem" id="BJr-RU-zkU">
+                        <barButtonItem key="leftBarButtonItem" image="close-icon" id="k3b-y2-OV5">
+                            <connections>
+                                <action selector="didExit:" destination="0DZ-nB-kye" id="1y5-VM-M28"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailsImage" destination="HNk-i2-aR1" id="BRn-Yo-9uJ"/>
-                        <outlet property="detailsLikes" destination="9vY-rF-4SN" id="c6X-BY-tSN"/>
+                        <outlet property="detailsLikes" destination="rzT-ha-mEV" id="WYw-pa-oIl"/>
                         <outlet property="detailsName" destination="FBC-hZ-gBz" id="xPx-dU-TdA"/>
-                        <outlet property="detailsRetweets" destination="rzT-ha-mEV" id="RVX-hm-JzX"/>
+                        <outlet property="detailsRetweets" destination="9vY-rF-4SN" id="pHD-b3-gS4"/>
                         <outlet property="detailsUserName" destination="95U-A5-KNg" id="cN8-0Z-KYa"/>
                         <outlet property="likeDetails" destination="uDu-sK-Qbq" id="CHI-2I-n4v"/>
                         <outlet property="retweetDetails" destination="Gvs-U7-H5c" id="psf-wO-cYj"/>
@@ -409,22 +423,34 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pqu-EJ-NN9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pqu-EJ-NN9">
                                 <rect key="frame" x="20" y="105" width="374" height="191"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Gy0-LQ-tqK" id="n9a-Yt-1cf"/>
+                                </connections>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" 0 characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtW-FB-St2">
+                                <rect key="frame" x="242" y="322" width="117" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dIx-PL-HbY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dIx-PL-HbY" firstAttribute="bottom" secondItem="Pqu-EJ-NN9" secondAttribute="bottom" constant="512" id="3JU-CR-AQx"/>
-                            <constraint firstItem="Pqu-EJ-NN9" firstAttribute="top" secondItem="dIx-PL-HbY" secondAttribute="top" constant="49" id="8vr-yh-5xc"/>
-                            <constraint firstItem="Pqu-EJ-NN9" firstAttribute="leading" secondItem="maJ-Ah-I9V" secondAttribute="leadingMargin" id="Z4S-dL-cqH"/>
-                            <constraint firstItem="Pqu-EJ-NN9" firstAttribute="trailing" secondItem="maJ-Ah-I9V" secondAttribute="trailingMargin" id="uxn-4T-dT5"/>
+                            <constraint firstItem="GtW-FB-St2" firstAttribute="top" secondItem="Pqu-EJ-NN9" secondAttribute="bottom" constant="23" id="9fW-Sq-0r7"/>
+                            <constraint firstItem="dIx-PL-HbY" firstAttribute="bottom" secondItem="GtW-FB-St2" secondAttribute="bottom" constant="502" id="9h9-iq-J1H"/>
+                            <constraint firstItem="dIx-PL-HbY" firstAttribute="trailing" secondItem="GtW-FB-St2" secondAttribute="trailing" constant="20" id="Agv-oj-Y4S"/>
+                            <constraint firstItem="dIx-PL-HbY" firstAttribute="trailing" secondItem="Pqu-EJ-NN9" secondAttribute="trailing" constant="20" id="DxH-6K-A21"/>
+                            <constraint firstItem="GtW-FB-St2" firstAttribute="leading" secondItem="dIx-PL-HbY" secondAttribute="leading" constant="277" id="INC-jQ-eMZ"/>
+                            <constraint firstItem="Pqu-EJ-NN9" firstAttribute="leading" secondItem="dIx-PL-HbY" secondAttribute="leading" constant="20" id="M4K-1w-7is"/>
+                            <constraint firstItem="Pqu-EJ-NN9" firstAttribute="top" secondItem="dIx-PL-HbY" secondAttribute="top" constant="49" id="fg0-2z-bp3"/>
+                            <constraint firstItem="dIx-PL-HbY" firstAttribute="bottom" secondItem="Pqu-EJ-NN9" secondAttribute="bottom" constant="546" id="z5R-b5-guM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NQ9-NY-UbC">
@@ -446,6 +472,7 @@ It has gained about 35% so far this year, and has more than doubled from a low a
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="counter" destination="GtW-FB-St2" id="eOw-WM-dhS"/>
                         <outlet property="tweetDraft" destination="Pqu-EJ-NN9" id="Tyq-Il-bQ7"/>
                     </connections>
                 </viewController>
@@ -491,6 +518,9 @@ It has gained about 35% so far this year, and has more than doubled from a low a
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

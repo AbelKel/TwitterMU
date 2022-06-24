@@ -13,11 +13,13 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *closeDraft;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *tweetTweet;
 @property (weak, nonatomic) IBOutlet UITextView *tweetDraft;
+@property (weak, nonatomic) IBOutlet UILabel *counter;
 
 
 @end
 
 @implementation ComposeViewController
+
 
 
 - (IBAction)tweetSendButton:(id)sender {
@@ -55,18 +57,26 @@
     
 }
 
-- (void)didTweet:(Tweet *)tweet {
-    
+- (void)textViewDidChange:(UITextView *)textView {
+    NSString *substring = [NSString stringWithString:_tweetDraft.text];
+    if (substring.length > 0) {
+        _counter.hidden =NO;
+        _counter.text = [NSString stringWithFormat:@"%d characters used", substring.length];
+    }
+    if (substring.length == 0) {
+        _counter.hidden = YES;
+    }
+    if (substring.length == 140) {
+        UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"You have used too many characters in your tweet!" message:@"Character limit is 140 tweet." preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
+        [alert addAction:defaultAction];
+        [self presentViewController:alert animated:YES completion:nil];
+        _counter.textColor = [UIColor redColor];
+    }
+    if (substring.length < 15) {
+        _counter.textColor = [UIColor greenColor];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

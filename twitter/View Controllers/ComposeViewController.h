@@ -18,9 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface ComposeViewController : UIViewController
+@interface ComposeViewController : UIViewController <UITextViewDelegate>
 
 @property (nonatomic, weak) id<ComposeViewControllerDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UILabel *characterCountLabel;
 
 -(void)closeButtonAction:(id)sender;
 

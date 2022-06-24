@@ -104,12 +104,15 @@
     cell.noLikes.text = [NSString stringWithFormat:@"%d", tweet.favoriteCount];
     cell.retweetNumber.text = [NSString stringWithFormat:@"%d", tweet.retweetCount];
     cell.noReply.text = [NSString stringWithFormat:@"%d", tweet.replyCount];
-   
-    
+
     NSString *URLString = tweet.user.profilePicture;
-    NSURL *url = [NSURL URLWithString:URLString];
-    NSData *urlData = [NSData dataWithContentsOfURL:url];
+    NSString *stringWithoutNormal = [URLString stringByReplacingOccurrencesOfString:@"_normal" withString:@""];
+    NSURL *url = [NSURL URLWithString:stringWithoutNormal];
     [cell.profilePicture setImageWithURL: url];
+    
+    cell.profilePicture.layer.cornerRadius = cell.profilePicture.frame.size.height/2;
+    cell.profilePicture.layer.masksToBounds = YES;
+    cell.profilePicture.layer.borderWidth = 0;
 
     
     return cell;

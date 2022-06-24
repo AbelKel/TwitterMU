@@ -22,4 +22,8 @@
 
 - (void)retweet:(Tweet *)tweet completion:(void (^)(Tweet *, NSError *))completion;
 
+- (void)unFavorite:(Tweet *)tweet completion:(void (^)(Tweet *, NSError *))completion;
+
+- (void)unRetweet:(Tweet *)tweet completion:(void (^)(Tweet *, NSError *))completion;
+
 @end
