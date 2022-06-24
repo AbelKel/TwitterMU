@@ -52,7 +52,6 @@
                     self.createdAtString = [NSString stringWithFormat:@"%lds", seconds];
                 }
     }
-    
     return self;
 }
 
